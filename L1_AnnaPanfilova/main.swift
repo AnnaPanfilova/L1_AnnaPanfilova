@@ -10,9 +10,25 @@ import Foundation
 
 //Задача 1: Решить квадратное уравнение.
 
-var a : Float = 6
-var b : Float = -1
-var c : Float = -2
+var a : Float = 0
+var b : Float = 0
+var c : Float = 0
+
+
+print ("Решение квадратного уравнения: ax2 + bx + c = 0")
+
+print("Введите значение \"а\"")
+
+a = Float(readLine() ?? "0") ?? 0
+
+print("Введите значение \"b\"")
+
+b = Float(readLine() ?? "0") ?? 0
+
+print("Введите значение \"c\"")
+
+c = Float(readLine() ?? "0") ?? 0
+
 
 var discr : Float = pow(b,2) - 4*a*c
 print("Дискриминант равен: \(discr)")
@@ -51,8 +67,18 @@ func findArea (a: Float, b: Float) -> Float{
 }
 
 
-let k1 : Float = 3
-let k2 : Float = 4
+var k1 : Float = 0
+var k2 : Float = 0
+
+print("Подсчет параметров прямоугольного треугольника")
+
+print("Введите длину первого катета ")
+
+k1 = Float(readLine() ?? "0") ?? 0
+
+print("Введите длину второго катета ")
+
+k2 = Float(readLine() ?? "0") ?? 0
 
 
 let h = findHypotenuse (a: k1, b:k2)
@@ -69,6 +95,8 @@ print ("Площадь треугольника равна: \(s)")
 
 var sum: Float = 0
 var percent: Float = 0
+
+print("Расчет суммы вклада за 5 лет")
 
 print("Введите сумму вклада")
 
